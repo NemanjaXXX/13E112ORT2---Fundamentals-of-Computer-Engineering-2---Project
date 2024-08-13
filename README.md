@@ -1,0 +1,2 @@
+# 13E112ORT2---Fundamentals-of-Computer-Engineering-2---Project
+Structure of units and their interfacing. Computer structure. Memory. Processor. Input/output system. Bus. Architecture and organization. Programming model. Data types. Instruction formats. Addressing modes. Instruction set. Interrupt. Organization. Operation unit – direct interconnections. Control unit – hardwired/microprogrammed realizations.
