@@ -1,0 +1,36 @@
+// 7+4=11
+
+100, 80 //LD memdir LD 7
+101, 00
+102, 10 // LD sa adrese 1000 
+103, 00
+104, 84 // add memdir 
+105, 00
+106, 20
+107, 00 //acc=7+4=11
+108, 88 // XOR
+109, 40 // memind
+10A, 00 // low na visoj
+10B, 40 // high na nizoj adrsi   // Sad hocu da podatak 0010 sa 3000h smestim u PC
+10C, 80 // LD memdir LD 3000h
+10D, 00 
+10E, 30 // Sa adrese 3000h
+10F, 00
+
+
+
+
+
+
+
+1000, 00
+1001, 07 // na adresi 1000 je 0007h
+
+2000, 00 
+2001, 04 // na adresi 2000h nalazi se 0004h
+
+3000, 10 // na 3000h nalazi se oprnd za XOR tj. 1001h
+3001, 01  
+
+4000, 30 // na 4000h nalazi se 3000h tj. adr oprnd
+4001, 00

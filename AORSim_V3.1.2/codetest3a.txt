@@ -1,0 +1,132 @@
+//100, 84 //add
+//101, 00 //memdir
+//102, 10 //sa adrese 1000
+//103, 00 //nizi bajt adrese
+//104, 84 //add 
+//105, C0 //immed
+//106, 00 //neposredno 5
+//107, 05 //nizi bajt 
+//108, 84 //add trenutnaVrednost u acc + memind
+//109, 40 //memind
+//10A, 20 //sa adrese 2000 citamo adresu
+//10B, 00
+
+
+
+
+
+
+
+
+//bezadresne
+//10C, 80 //ld
+//10D, C0 //immed
+//10E, 00 //acc=02h
+//10F, 02
+//110, C6 //bezadresne asl acc=4h
+//111, C3 //lsr acc=2h
+112, C2 //asr
+113, C4 //ror treba da zarotira sve i da pise 80h
+114, C8 //rol da vrati 01h, obrnuti smer
+115, CA //INTE da se aktivira I
+116, CB //INTD da se deaktivira I
+117, CE //push ono iz acc a to je 1
+118, C6 // acc=4h
+119, CF //pop
+
+
+
+
+
+
+
+
+//JMP, JSR
+//11A, 80 //load
+//11B, C0 //immed
+//11C, 00 //acc=1
+//11D, 01
+//11E, C3 //lsr
+//11F, 08 //beql
+//120, 04 //skok za 4, na 110
+
+
+
+
+
+
+
+121, 80 //load
+122, 00 //memdir
+123, 40 //cita sa adrese 4000 i smesta u acc
+124, 00
+125, 41 //JSR
+126, 50 //skace na 5000 
+127, 00
+128, 40 //JMP
+129, 60 //na 6000
+12A, 00
+
+
+
+
+
+
+//LD, ST, STOREL
+12B, 80 //ld
+12C, 00 //memdir
+12D, 70 //sa adrese 7hiljada cita operand
+12E, 00
+12F, 81 //st
+130, 00 //memdir
+131, 80 //upisujem na adr 8000 ono iz acc, a to je 0780h jer sam to procitao iz prethodne instrukcije
+132, 00  
+133, 82 //storel
+134, 00 //memdir
+135, 30 //smestam 80h nizi bajt akumulatora na 2000
+136, 00
+137, 80 //ld
+138, 00 //memdir
+139, 30 
+13A, 00
+
+
+
+
+
+
+1000, 00 //na adresi 1000  je 4
+1001, 04
+
+2000, 30 //sa adrese 2000 citamo adresu na kojoj se nalazi operand
+2001, 00
+
+3000, 00 // sa adrese 3000 citamo 1 i sabiramo sa 9 
+3001, 01
+
+4000, 0F
+4001, 77
+
+
+
+
+
+//5000, 81 //store
+//5001, 00 //memdir
+//5002, 30 //treba da sacuva na 3000 0F77h
+//5003, 00 
+//5004, 80 //load
+//5005, C0 //immed
+//5006, 00 //ucita 10 u acc
+//5007, 0A
+//5008, C0 // RTS
+
+
+//6000, C7 //lsl
+//6001, 84 //add
+//6002, C0 //immed
+//6003, 00 //
+//6004, 01
+
+//7000, 07
+//7001, 80 //0780h

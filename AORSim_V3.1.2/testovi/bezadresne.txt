@@ -1,0 +1,14 @@
+100, 80 //ld
+101, C0 //immed
+102, 00 //acc=02h
+103, 02
+104, C6 //bezadresne asl acc=4h
+105, C3 //lsr acc=2h
+106, C2 //asr
+107, C4 //ror treba da zarotira sve i da pise 80h
+108, C8 //rol da vrati 01h, obrnuti smer
+109, CA //INTE da se aktivira I
+10A, CB //INTD da se deaktivira I
+10B, CE //push ono iz acc a to je 1
+10C, C6 // acc=4h
+10D, CF //pop

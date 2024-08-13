@@ -1,0 +1,22 @@
+100, 84 //add
+101, 00 //memdir
+102, 10 //sa adrese 1000
+103, 00 //nizi bajt adrese
+104, 84 //add 
+105, C0 //immed
+106, 00 //neposredno 5
+107, 05 //nizi bajt 
+108, 84 //add trenutnaVrednost u acc + memind
+109, 40 //memind
+10A, 20 //sa adrese 2000 citamo adresu
+10B, 00
+
+
+1000, 00 //na adresi 1000  je 4
+1001, 04
+
+2000, 30 //sa adrese 2000 citamo adresu na kojoj se nalazi operand
+2001, 00
+
+3000, 00 // sa adrese 3000 citamo 1 i sabiramo sa 9 
+3001, 01

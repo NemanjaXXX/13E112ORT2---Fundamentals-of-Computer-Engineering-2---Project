@@ -1,0 +1,22 @@
+100, 80 //ld
+101, 00 //memdir
+102, 10 //sa adrese hiljadu cita operand
+103, 00
+104, 81 //st
+105, 00 //memdir
+106, 20 //upisujem na adr 2000 ono iz acc, a to je 0780h jer sam to procitao iz prethodne instrukcije
+107, 00  
+108, 82 //storel
+109, 00 //memdir
+10A, 30 //smestam 80h nizi bajt akumulatora na 2000
+10B, 00
+10C, 80 //ld
+10D, 00 //memdir
+10E, 30 
+10F, 00
+
+
+
+1000, 07
+1001, 80 //0780h
+

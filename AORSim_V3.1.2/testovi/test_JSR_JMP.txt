@@ -1,0 +1,40 @@
+100, 80 //load
+101, C0 //immed
+102, 00 //acc=1
+103, 01
+104, C3 //lsr
+105, 08 //beql
+106, 04 //skok za 4, na 110
+
+
+10B, 80 //load
+10C, 00 //memdir
+10D, 10 //cita sa adrese 1000 i smesta u acc
+10E, 00
+10F, 41 //JSR
+110, 20 //skace na 2000 
+111, 00
+112, 40 //JMP
+113, 40 //na 4000
+114, 00
+
+
+1000, 0F
+1001, 77
+
+2000, 81 //store
+2001, 00 //memdir
+2002, 30 //treba da sacuva na 3000 0F77h
+2003, 00 
+2004, 80 //load
+2005, C0 //immed
+2006, 00 //ucita 10 u acc
+2007, 0A
+2008, C0 // RTS
+
+
+4000, C7 //lsl
+4001, 84 //add
+4002, C0 //immed
+4003, 00 //
+4004, 01
